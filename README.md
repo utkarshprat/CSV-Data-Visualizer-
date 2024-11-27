@@ -57,9 +57,12 @@ Troubleshooting:-
 This README is designed to help users easily understand how to set up and use the tool. Let me know if you'd like to make any further modifications!
 
 This README is designed to help users easily understand how to set up and use the tool. Let me know if you'd like to make any further modifications!
-![Screenshot 2024-11-25 180428](https://github.com/user-attachments/assets/0dbb89ed-9e6d-4c58-b0e9-2da164c9ba52)
-![Screenshot 2024-11-25 180508](https://github.com/user-attachments/assets/6aed8a24-750d-4097-92c8-7b348459fdbb)
-![Screenshot 2024-11-25 180521](https://github.com/user-attachments/assets/ce0e678c-5064-444f-9927-6ffe6a853840)
+Sample Images:-
+![data_visualizer (2)](https://github.com/user-attachments/assets/d51d77d5-0f60-4d69-8a95-c981e19daf91)
+![data_visualizer (3)](https://github.com/user-attachments/assets/000e64e4-f69a-4e28-bdb2-2c103c55777f)
+![data_visualizer (4)](https://github.com/user-attachments/assets/6d0c4d4b-8296-4749-bdde-bcd614957bc2)
+![data_visualizer (1)](https://github.com/user-attachments/assets/f37e0ae0-4fce-46d2-9263-28a090dc3194)
+
 
 
 
