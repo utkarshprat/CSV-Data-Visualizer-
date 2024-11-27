@@ -1,57 +1,60 @@
     Data Visualization Tool:-
-    This project provides an interactive tool to visualize Sales, Profit, and Expenses data from a CSV file. With this tool, you can:
-    •   Load a CSV file containing data on Sales, Profit, and Expenses.
-    •   Visualize the data in a graphical format (Line plots).
-    The tool uses a simple graphical user interface (GUI) built with tkinter, making it easy to use for anyone, even without coding experience.
-
+        This project provides an interactive tool to visualize Sales, Profit, and Expenses data from a CSV file. With this tool, you can:
+        •   Load a CSV file containing data on Sales, Profit, and Expenses.
+        •   Visualize the data in a graphical format (Line plots).
+        The tool uses a simple graphical user interface (GUI) built with tkinter, making it easy to use for anyone, even without coding experience.
+    
     Features:-
-    •   Load CSV Files: Easily load a CSV file through a user-friendly file dialog.
-    •   Data Visualization: Automatically generates line plots for Sales, Profit, and Expenses.
-        o   Sales are plotted in blue.
-        o   Profit is plotted in green.
-        o   Expenses are plotted in red.
-
+        •    CSV File Support: Load CSV files with sales,    profit, and expenses data.
+        •   Graphical Plots: Automatically generates graphs for:
+            o    Sales
+            o    Profit
+            o    Expenses
+        •   User-Friendly GUI: Simple interface for loading files and triggering visualizations.
+    
+    
     How to Use:-
-    1. Run the GUI:
-            python cleab_gui.py
-   
-
-    2. Follow the steps:
-        - Select a CSV file to clean.
-        - Choose an option:
-        - Drop rows with missing values.
-        - Fill missing values with a specified value.
-        - Specify a directory to save the cleaned file.
-
-    3. View Results: The cleaned file will be saved in the selected directory.
-
-
+        1.  Clone the repository:   
+                    git clone <repository-url>
+                    cd <repository-folder>
+        2.  Run the GUI:
+            o   Execute the graph.py file:
+                    python graph.py
+        3.  Load a CSV file:
+            o   Click the Open CSV button in the GUI.
+            o   Select a CSV file containing your data.
+        4.  View Graphs:
+    
+    The application will automatically generate plots for Sales, Profit, and Expenses.
+    
     Code Explanation:-
     1. graph.py
-    This file contains the core functions responsible for data loading and plotting the graphs.
-
-    •   load(file): This function loads the data from the CSV file into a pandas DataFrame.
-    •   sales(data): This function plots the Sales data from the CSV file.
-    •   profit(data): This function plots the Profit data from the CSV file.
-    •   expenses(data): This function plots the Expenses data from the CSV file.
-    Each of these functions creates a line plot using matplotlib.
-
-    2. graph_gui.py
-    This file contains the graphical user interface (GUI) built with tkinter.
-
-    •   open_file(): Opens a file dialog that allows the user to select a CSV file. Once the file is selected, it calls the functions to plot Sales, Profit, and Expenses.
-    •   main_gui(): Initializes the GUI, creates a label with instructions, and sets up a button to open the file dialog.
+        This file contains the core functions responsible for data loading and plotting the graphs.
     
+        •   load(file): This function loads the data from the CSV file into a pandas DataFrame.
+        •   sales(data): This function plots the Sales data from the CSV file.
+        •   profit(data): This function plots the Profit data from the CSV file.
+        •   expenses(data): This function plots the Expenses data from the CSV file.
+        Each of these functions creates a line plot using matplotlib.
+    
+    2. graph_gui.py
+        This file contains the graphical user interface (GUI) built with tkinter.
+    
+        •   open_file(): Opens a file dialog that allows the user to select a CSV file. Once the file is selected, it calls the functions to plot Sales, Profit, and Expenses.
+        •   main_gui(): Initializes the GUI, creates a label with instructions, and sets up a button to open the file dialog.
+        
     Example:-
-    When you select a valid CSV file, you will see three different plots appear in the following order:
-    •   Sales Plot: A line plot showing the Sales data over time (with the 'Index' column on the x-axis).
-    •   Profit Plot: A line plot showing the Profit data.
-    •   Expenses Plot: A line plot showing the Expenses data.
-    Each plot will be displayed in a separate window.
-
+        When you select a valid CSV file, you will see three different plots appear in the following order:
+    
+        •   Sales Plot: A line plot showing the Sales data over time (with the 'Index' column on the x-axis).
+        •   Profit Plot: A line plot showing the Profit data.
+        •   Expenses Plot: A line plot showing the Expenses data.
+        Each plot will be displayed in a separate window.
+    
     Troubleshooting:-
-    •   Error: "File not found": Make sure the CSV file exists at the specified location and is correctly formatted.
-    •   Error: "Missing columns": Ensure the CSV file contains the necessary columns (Index, Sales, Profit, Expenses) to generate the plots.
+        •   Error: "File not found": Make sure the CSV file exists at the specified location and is correctly formatted.
+        •   Error: "Missing columns": Ensure the CSV file contains the necessary columns (Index, Sales, Profit, Expenses) to generate the plots.
+
 
 This README is designed to help users easily understand how to set up and use the tool. 
 
