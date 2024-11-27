@@ -1,69 +1,56 @@
     Data Visualization Tool:-
-        This project provides an interactive tool to visualize Sales, Profit, and Expenses data from a CSV file. With this tool, you can:
-        •   Load a CSV file containing data on Sales, Profit, and Expenses.
-        •   Visualize the data in a graphical format (Line plots).
-        The tool uses a simple graphical user interface (GUI) built with tkinter, making it easy to use for anyone, even without coding experience.
+       This project allows users to visualize data from a CSV file by selecting columns for the x-axis and multiple columns for the y-axis. The program plots line graphs based on the selected data columns using          Matplotlib and Tkinter for the GUI.
     
     Features:-
-        •    CSV File Support: Load CSV files with sales,    profit, and expenses data.
-        •   Graphical Plots: Automatically generates graphs for:
-            o    Sales
-            o    Profit
-            o    Expenses
-        •   User-Friendly GUI: Simple interface for loading files and triggering visualizations.
+        •    Load CSV: Open any CSV file and load its data.
+        •    Select Columns: Choose the columns to plot against each other (e.g., Date vs Sales, Profit vs Expenses).
+        •    Plot Graphs: Generate line graphs for selected columns.
+        •    Interactive GUI: Easy-to-use graphical interface to select data and plot graphs.
     
     
     How to Use:-
-        1.  Clone the repository:   
-                    git clone <repository-url>
-                    cd <repository-folder>
-        2.  Run the GUI:
-            o   Execute the graph.py file:
-                    python graph.py
-        3.  Load a CSV file:
-            o   Click the Open CSV button in the GUI.
-            o   Select a CSV file containing your data.
-        4.  View Graphs:
+        1.Run the Program
+            •   Execute the main Python script graph_gui.py to start the application. The GUI will open.
     
-    The application will automatically generate plots for Sales, Profit, and Expenses.
+        2. Open CSV File
+            •   Click Open CSV to open a file dialog and select the CSV file you want to visualize.
+        3. Select Columns
+            •   A new window will open where you can:
+                o   Select the X-axis column from the dropdown menu.
+                o   Select one or more Y-axis columns using checkboxes.
+        4. Plot Graph
+            •   After selecting the columns, click the Plot Graph button to generate the graph
+    
+    The application will automatically generate for features that you select.
     
     Code Explanation:-
-    1. graph.py
-        This file contains the core functions responsible for data loading and plotting the graphs.
-    
-        •   load(file): This function loads the data from the CSV file into a pandas DataFrame.
-        •   sales(data): This function plots the Sales data from the CSV file.
-        •   profit(data): This function plots the Profit data from the CSV file.
-        •   expenses(data): This function plots the Expenses data from the CSV file.
-        Each of these functions creates a line plot using matplotlib.
-    
-    2. graph_gui.py
-        This file contains the graphical user interface (GUI) built with tkinter.
-    
-        •   open_file(): Opens a file dialog that allows the user to select a CSV file. Once the file is selected, it calls the functions to plot Sales, Profit, and Expenses.
-        •   main_gui(): Initializes the GUI, creates a label with instructions, and sets up a button to open the file dialog.
+        1.  graph.py: Contains the core logic for loading CSV files and plotting data.
+            •   ld(f): Loads the CSV file.
+            •   plt_d(d, x, y): Plots selected columns as graphs.
+        2.  graph_gui.py: Implements the graphical user interface for selecting files and columns.
+            •   op_f(): Opens the file dialog to load a CSV file.
+            •   sel_col(d): Displays a column selection window for the user.
+            •   gui(): Sets up the main window for the application.
         
-    Example:-
-        When you select a valid CSV file, you will see three different plots appear in the following order:
     
-        •   Sales Plot: A line plot showing the Sales data over time (with the 'Index' column on the x-axis).
-        •   Profit Plot: A line plot showing the Profit data.
-        •   Expenses Plot: A line plot showing the Expenses data.
-        Each plot will be displayed in a separate window.
     
     Troubleshooting:-
-        •   Error: "File not found": Make sure the CSV file exists at the specified location and is correctly formatted.
-        •   Error: "Missing columns": Ensure the CSV file contains the necessary columns (Index, Sales, Profit, Expenses) to generate the plots.
+        •   Missing Dependencies: If you encounter errors related to missing modules (pandas, matplotlib, tkinter), ensure all required libraries are installed. Run pip install pandas matplotlib to install the necessary dependencies.
 
+    •   File Not Found: If the program doesn't load your CSV file, ensure the file path is correct and that the file is accessible. Verify the file is in CSV format and contains the expected columns.
 
 This README is designed to help users easily understand how to set up and use the tool. 
 
     Sample Images-
 
-![data_visualizer (1)](https://github.com/user-attachments/assets/f37e0ae0-4fce-46d2-9263-28a090dc3194)
-![data_visualizer (2)](https://github.com/user-attachments/assets/d51d77d5-0f60-4d69-8a95-c981e19daf91)
-![data_visualizer (3)](https://github.com/user-attachments/assets/000e64e4-f69a-4e28-bdb2-2c103c55777f)
-![data_visualizer (4)](https://github.com/user-attachments/assets/6d0c4d4b-8296-4749-bdde-bcd614957bc2)
+![visualize (1)](https://github.com/user-attachments/assets/a62a960e-246e-425a-a308-e1c2022f427e)
+
+![visualize (2)](https://github.com/user-attachments/assets/63da4360-c9ae-4aec-9b2b-8b51e6cba1eb)
+
+![visualize (3)](https://github.com/user-attachments/assets/52e72e58-a2b9-42dd-ae0c-146dc530da51)
+
+![visualize (4)](https://github.com/user-attachments/assets/304d5161-3e66-4df2-9b8a-0e909bf9dd0f)
+
 
 
 
