@@ -53,10 +53,7 @@
     •   Error: "File not found": Make sure the CSV file exists at the specified location and is correctly formatted.
     •   Error: "Missing columns": Ensure the CSV file contains the necessary columns (Index, Sales, Profit, Expenses) to generate the plots.
 
-This README is designed to help users easily understand how to set up and use the tool. Let me know if you'd like to make any further modifications!
-
-This README is designed to help users easily understand how to set up and use the tool. Let me know if you'd like to make any further modifications!
-
+This README is designed to help users easily understand how to set up and use the tool. 
 
     Sample Images-
 
